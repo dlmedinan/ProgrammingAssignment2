@@ -1,7 +1,9 @@
 ## The general idea with the following functions is to cache the inverse of a matrix
 ## This scrip is based on the example format of the programming assingment 2
 
-makeCacheMatriz <- function(x = matrix()) {
+##The following function creates a matrix objetct in order to cache its inverse.
+
+makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
     x <<- y
@@ -14,6 +16,8 @@ makeCacheMatriz <- function(x = matrix()) {
        setmatrix = setmatrix,
        getmatrix = getmatrix)
 }
+
+## Finally, this function computes the inverse of the matrix
 
 cacheSolve <- function(x = matrix(), ...) {
   m <- x$getmatrix()
